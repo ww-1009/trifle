@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+.seasy-dialog{z-index: 1002; position: relative;}
+.seasy-dialog-header{clear: both;}
+.seasy-dialog-header-left{float: left; background: url("../images/seasy.dialog.topleft.gif") no-repeat;}
+.seasy-dialog-header-center{float: left; background: url("../images/seasy.dialog.topcenter.gif") repeat-x;}
+.seasy-dialog-header-button{float: left; background: url("../images/seasy.dialog.close.gif") transparent no-repeat right bottom; cursor: pointer;}
+.seasy-dialog-header-right{float: left; background: url("../images/seasy.dialog.topright.gif") no-repeat;}
+.seasy-dialog-body{clear: both;}
+.seasy-dialog-body-left{float: left; background: url("../images/seasy.dialog.middleleft.gif") repeat-y;}
+.seasy-dialog-body-center{float: left; background: url("../images/seasy.dialog.middlecenter.gif") repeat;}
+.seasy-dialog-body-title{clear: both; float: left; margin-left: -6px;}
+.seasy-dialog-body-title-content{clear: both; float: left; background: url("../images/seasy.dialog.titlebg.png") repeat-x;}
+.seasy-dialog-body-title-right{float: left; background: url("../images/seasy.dialog.titleright.gif") no-repeat;}
+.seasy-dialog-body-title-button{float: right; background: url("../images/seasy.dialog.close.gif") 50% 50% no-repeat; cursor: pointer;}
+.seasy-dialog-body-right{float: left; background: url("../images/seasy.dialog.middleright.gif") repeat-y;}
+.seasy-dialog-body-body{clear: both; float: left; overflow: auto;}
+.seasy-dialog-foot{clear: both;}
+.seasy-dialog-foot-left{float: left; background: url("../images/seasy.dialog.bottomleft.gif") no-repeat;}
+.seasy-dialog-foot-center{float: left; background: url("../images/seasy.dialog.bottomcenter.gif") repeat-x;}
+.seasy-dialog-foot-right{float: left; background: url("../images/seasy.dialog.bottomright.gif") no-repeat;}
+.seasy-modal-layer{width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; background: #BBBBBB; filter: alpha(opacity=30); -moz-opacity: 0.3; opacity: 0.3;}
