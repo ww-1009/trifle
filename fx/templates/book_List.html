@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图书展示</title>
+</head>
+<body>
+{% extends "base.html" %}
+{% block title %}图书管理系统展示{% endblock %}
+
+{% block content %}
+<div class="container">
+   {% block page_content %}
+       <div class="col-sm-2">
+           <div class="list-group">
+               <a href="/bookList" class="list-group-item bg-success">图书展示</a>
+               <a href="/addBook" class="list-group-item">添加书</a>
+    </div>
+</div>
+        <table class="table-bordered table table-hover table table-striped table-condensed" align="center">
+            <tr class="success">
+                <th>书号</th>
+                <th>书名</th>
+                <th>出版社</th>
+                <th>借阅学生学号</th>
+                <th>功能栏</th>
+            </tr>
+              {% for book in books %}
+                  <tr>
+                      <td>{{ book[0] }}</td>
+                      <td>{{ book[1] }}</td>
+                      <td>{{ book[2] }}</td>
+                      <td>{{ book[3] }}</td>
+                      <td><button class="btn  btn-danger" onclick="window.location.href='/deleteBook/{{ book[0] }}'"> 删除</button> |
+                          <button class="btn  btn-danger" onclick="window.location.href='/updateBook/{{ book[0] }}'"> 修改</button></td>
+                  </tr>
+            {% endfor %}
+        </table>
+   {% endblock %}
+</div>
+{% endblock %}
+</body>
+</html>

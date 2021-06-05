@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends "base.html" %}
+{% block title %}图书管理系统展示{% endblock %}
+
+{% block content %}
+      <form action="/updateBookProcess" method="post" class="form-horizontal" style="border: 3px solid azure;background-color: #f1efef" >
+        <div class="form-group">
+            <label for="bid" class="col-sm-3 control-label">书号</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" id="bid" name="bid" value={{ bookInf[0] }} >
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="bname" class="col-sm-3 control-label">书名</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" id="bname" name="bname" value={{ bookInf[1] }} required autofocus>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="bpub" class="col-sm-3 control-label">出版社</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" id="bpub" name="bpub" value={{ bookInf[2] }}>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="sno" class="col-sm-3 control-label">学号</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" id="sno" name="sno" value={{ bookInf[3] }}>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-5">
+                <button type="submit" class="btn btn-info col-sm-6">确定</button>
+                <button type="reset" class="btn  btn-default  col-sm-6">重置</button>
+            </div>
+        </div>
+
+    </form>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends "base.html" %}
+{% block title %}图书管理系统展示{% endblock %}
+
+{% block content %}
+<div class="container">
+   {% block page_content %}
+        <table class="table-bordered table table-hover table table-striped table-condensed" align="center">
+            <tr class="success">
+                <th>员工号</th>
+                <th>员工名</th>
+                <th>员工电话</th>
+                <th>部门号</th>
+                <th>功能栏</th>
+            </tr>
+              {% for clark in clarks %}
+                  <tr>
+                      <td>{{ clark[0] }}</td>
+                      <td>{{ clark[1] }}</td>
+                      <td>{{ clark[2] }}</td>
+                      <td>{{ clark[3] }}</td>
+                      <td><button class="btn  btn-danger" onclick="window.location.href='/deleteClark/{{ clark[0] }}'"> 删除</button></td>
+                  </tr>
+            {% endfor %}
+        </table>
+   {% endblock %}
+</div>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends "base.html" %}
+{% block title %}图书管理系统展示{% endblock %}
+
+{% block content %}
+<div class="container">
+   {% block page_content %}
+        <table class="table-bordered table table-hover table table-striped table-condensed" align="center">
+            <tr class="success">
+                <th>部门号</th>
+                <th>部门名</th>
+                <th>部门电话</th>
+                <th>功能栏</th>
+            </tr>
+              {% for department in departments %}
+                  <tr>
+                      <td>{{ department[0] }}</td>
+                      <td>{{ department[1] }}</td>
+                      <td>{{ department[2] }}</td>
+                      <td><button class="btn btn-danger" onclick="window.location.href='/deleteDepartment/{{ department[0] }}'"> 删除</button></td>
+                  </tr>
+            {% endfor %}
+        </table>
+   {% endblock %}
+</div>
+{% endblock %}
+</body>
+</html>
