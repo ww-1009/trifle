@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DAEAEF"
+    tools:context=".Company.CompanyAccountManagementActivity">
+
+
+
+    //引入布局
+    <include layout = "@layout/navbar"
+        tools:ignore="ResourceCycle" />
+
+    <LinearLayout
+        android:id="@+id/delete_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="110dp"
+        android:padding="50dp"
+        >
+
+        <Button
+            android:id="@+id/delete_account_btn2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/shape"
+            android:onClick="delete_account_check3"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text="注销账号" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/log_out"
+        android:layout_below="@+id/delete_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="50dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/log_out_btn"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:background="@drawable/shape"
+            android:onClick="log_out_check"
+            android:text="退出登录" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

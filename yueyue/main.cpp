@@ -87,6 +87,9 @@ void Circle::getLen() {
 void test(){
     cout<<"mxy";
 }
+class Counter{
+    
+};
 int main() {
     Rectangle rectangle(4,5);
     rectangle.getArea();

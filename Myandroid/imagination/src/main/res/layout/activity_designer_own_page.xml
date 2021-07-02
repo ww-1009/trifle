@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DAEAEF"
+    tools:context=".Designer.DesignerOwnPageActivity">
+
+
+
+    //引入布局
+    <include layout = "@layout/navbar"
+        tools:ignore="ResourceCycle" />
+
+    <include layout="@layout/navigation_designer3"/>
+
+
+    <LinearLayout
+        android:id="@+id/designer_management_own_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        android:padding="50dp"
+        >
+
+        <Button
+            android:id="@+id/designer_management_own_information_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="个人信息" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/qualification_lay"
+        android:layout_below="@+id/designer_management_own_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="50dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/qualification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:background="@drawable/shape"
+            android:text="资质认证" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/account_control"
+        android:layout_below="@+id/qualification_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="50dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/account_control_btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:background="@drawable/shape"
+            android:text="账号管理" />
+    </LinearLayout>
+
+
+</RelativeLayout>

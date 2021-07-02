@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#DAEAEF"
+    android:layout_height="match_parent">
+
+    <include layout = "@layout/navbar"
+        tools:ignore="ResourceCycle" />
+
+    <LinearLayout
+        android:id="@+id/get_image"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit2"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/get_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        android:textSize="23dp"
+        android:text="提交"
+        />
+
+
+</RelativeLayout>
+

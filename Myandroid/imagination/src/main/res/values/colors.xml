@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#9DBDC6</color>
+    <color name="colorPrimaryDark">#A5CAF1</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="PeachPuff" tools:ignore="MissingDefaultResource">#FFDAB9</color>
+    <color name="QQbar">#9DBDC6</color>
+    <color name="wangyibar">#1E68CB</color>
+    <color name="white">#ffffff</color>
+    <color name="linecolor">#c3c3c3c3</color>  //分割线
+    <color name="gray">#F5F5F5</color>
+    <color name="black">#000000</color>
+</resources>

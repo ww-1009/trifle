@@ -1,0 +1,9 @@
+include ':change'
+include ':imagination'
+include ':initial'
+include ':begin'
+include ':camera'
+include ':opencv'
+include ':sdk'
+include ':app'
+rootProject.name = "Myandroid"

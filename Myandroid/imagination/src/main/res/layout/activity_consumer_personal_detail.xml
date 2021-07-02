@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DAEAEF"
+    tools:context=".Consumer.ConsumerPersonalDetailActivity">
+
+    <include layout = "@layout/navbar"
+        tools:ignore="ResourceCycle" />
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="90dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TextView_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="23dp"
+                android:background="@drawable/shape"
+                android:text="性别：" />
+
+            <Spinner
+                android:id="@+id/Spinner_sex"
+                android:paddingLeft="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="243dp"
+                android:layout_height="55dp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/LinearLayout_sex"
+            android:layout_marginTop="45dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TextView_age"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="23dp"
+                android:background="@drawable/shape"
+                android:text="年龄： " />
+
+
+
+            <EditText
+                android:id="@+id/Ed_age"
+                android:layout_width="243dp"
+                android:layout_height="55dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/editview"
+                android:gravity="center"
+                android:hint="请输入年龄" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/LinearLayout_age"
+            android:layout_marginTop="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TextView_height"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="23dp"
+                android:background="@drawable/shape"
+                android:text="身高：" />
+
+            <EditText
+                android:id="@+id/Ed_high"
+                android:layout_width="243dp"
+                android:layout_height="55dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/editview"
+                android:gravity="center"
+                android:hint="请输入身高" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/LinearLayout_height"
+            android:layout_marginTop="45dp"
+            android:orientation="horizontal">
+
+            <!--        <Spinner-->
+            <!--            android:id="@+id/Spinner_weight"-->
+            <!--            android:layout_width="300dp"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginLeft="10dp"-->
+            <!--            />-->
+
+            <TextView
+                android:id="@+id/TextView_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:text="体重："
+                android:textSize="23dp" />
+
+            <EditText
+                android:id="@+id/Ed_weight"
+                android:layout_width="243dp"
+                android:layout_height="55dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/editview"
+                android:gravity="center"
+                android:hint="请输入体重" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/determine"
+            android:layout_below="@+id/LinearLayout_weight"
+            android:background="@drawable/button"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:textSize="24dp"
+            android:text="确定" />
+
+
+
+    </RelativeLayout>
+
+
+
+
+<!--    <include layout="@layout/navigation_bar1"/>-->
+
+</RelativeLayout>
